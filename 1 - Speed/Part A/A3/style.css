@@ -38,3 +38,94 @@ footer {
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+#parent {	
+	animation-name: rotate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+
+.ball {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+#yellow {
+	background-color: #FDA543;
+	transform: translate(0px, 35px);
+	
+	animation-name: yellow_pull;
+}
+
+#red {
+	background-color: #F63D3A;
+	transform: translate(40px, 25px);
+	
+	animation-name: red_pull;
+}
+
+#green {
+	background-color: #19A68C;
+	transform: translate(0px, 15px);
+	
+	animation-name: green_pull;
+}
+
+#blue {
+	background-color: #193B48;
+	transform: translate(-40px, -75px);
+	
+	animation-name: blue_pull;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes red_pull {
+	from {
+		transform: translate(40px, 25px);
+	}
+	to {
+		transform: translate(60px, 25px);
+	}
+}
+
+@keyframes yellow_pull {
+	from {
+		transform: translate(0px, 35px);
+	}
+	to {
+		transform: translate(0px, 15px);
+	}
+}
+
+@keyframes green_pull {
+	from {
+		transform: translate(0px, 15px);
+	}
+	to {
+		transform: translate(0px, 35px);
+	}
+}
+
+@keyframes blue_pull {
+	from {
+		transform: translate(-40px, -75px);
+	}
+	to {
+		transform: translate(-60px, -75px);
+	}
+}
