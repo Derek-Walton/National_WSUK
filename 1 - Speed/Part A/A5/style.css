@@ -43,3 +43,12 @@ footer {
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+img {
+  width: 400px;
+  filter: grayscale();
+}
+
+img:hover {
+  filter: none;
+}
