@@ -43,3 +43,58 @@ footer {
 
 /*DO NOT MODIFY ANY CODE ABOVE*/
 /*PUT YOUR CSS CODE FROM THIS POINT ONWARD*/
+
+#container {
+  width: 300px;
+  height: 300px;
+  border: darkblue;
+  border-style: solid;
+}
+
+button {
+  width: 30%;
+  height: 70%;
+  margin: 5%;
+}
+
+#face {
+  transform: rotate(90deg);
+  width: 200px;
+  height: 200px;
+  background-color: #a9db7a;
+  border-radius: 50%;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#smileyFaceContainer {
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  height: 80%;
+}
+
+#buttonContainer {
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  height: 20%;
+}
+
+@keyframes toHappy {
+  to {
+    background-color: #a9db7a;
+  }
+}
+@keyframes toAverage {
+  to {
+    background-color: #eed16b;
+  }
+}
+@keyframes toSad {
+  to {
+    background-color: #ee9295;
+  }
+}

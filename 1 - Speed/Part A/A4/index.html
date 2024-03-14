@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Speed A4</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,15 +16,24 @@
 	</div>
 	<main>
 
-		<!--Your code goes here-->
-
+		<div id="container">
+			<div id="smileyFaceContainer">
+				<p id="face">:)</p>
+			</div>
+			<div id="buttonContainer">
+				<button id="happyButton">:)</button>
+				<button id="averageButton">:|</button>
+				<button id="sadButton">:(</button>
+			</div>
+		</div>
+		
 	</main>
 	<footer id="dynamicFooter">
 	</footer>
 	<script>
 		document.getElementById('dynamicFooter').innerHTML = '&copy; ' + new Date().getFullYear() + ' WSUK Speed | All rights reserved.';
 	</script>
-	<script src="js/script.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
